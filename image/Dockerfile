@@ -1,2 +1,6 @@
 FROM python:3
-CMD ["python", "-c", "print('hello')"]
+WORKDIR /app
+COPY app/* ./
+RUN python -m pip install --upgrade pip && \
+    pip install -r requirements.txt
+CMD ["python", "main.py"]

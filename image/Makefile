@@ -1,5 +1,5 @@
 build:
 	docker build -t sum .
 
-run
+run:
 	docker run sum

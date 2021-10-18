@@ -1,3 +1,4 @@
 private.md
 node_modules
 image/venv
+image/app/secret.py
