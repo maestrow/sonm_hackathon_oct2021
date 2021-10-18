@@ -9,7 +9,7 @@ sendurl = f'{serviceIP}/push_result'
 
 resp = requests.get(geturl)
 task = resp.json()
-print(task)
+#print(task)
 # id a b
 
 param = {
@@ -19,8 +19,8 @@ param = {
 
 json_param = json.dumps(param)
 
-print(json_param)
-
-resp = requests.post(sendurl, data=json_param)
+#print(json_param)
+headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
+resp = requests.post(sendurl, data=json_param, headers=headers)
 
 print(resp)
