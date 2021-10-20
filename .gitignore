@@ -1,4 +1,5 @@
 private.md
 node_modules
 image/venv
-image/app/secret.py
+image/env.txt
+.vscode/.ropeproject/objectdb

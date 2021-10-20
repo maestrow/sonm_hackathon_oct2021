@@ -1,11 +1,13 @@
 import requests
 import json
+import os
 
 from requests.api import get
-from secret import serviceIP
 
-geturl = f'{serviceIP}/get_task'
-sendurl = f'{serviceIP}/push_result'
+serviceAddr = os.getenv('SERVICE_ADDR')
+
+geturl = f'{serviceAddr}/get_task'
+sendurl = f'{serviceAddr}/push_result'
 
 resp = requests.get(geturl)
 task = resp.json()

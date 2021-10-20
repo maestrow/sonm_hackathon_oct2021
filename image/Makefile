@@ -1,5 +1,5 @@
 build:
-	docker build -t sum .
+	docker build -t sonm/sum .
 
 run:
-	docker run sum
+	docker run --env-file=./env.txt sonm/sum
