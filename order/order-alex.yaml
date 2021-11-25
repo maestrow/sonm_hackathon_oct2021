@@ -1,0 +1,7 @@
+duration: 1h
+price: 0.1 USD/h
+
+# Identity level of the counterparty. Can be "anonymous", "registered", "identified" and "professional".
+identity: anonymous
+counterparty: 0xa7e259a495f5a45f8a7e1591cbd2790717d14b28
+tag: sonm-hackathon-oct2021

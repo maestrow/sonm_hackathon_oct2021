@@ -1,0 +1,30 @@
+duration: 1h
+price: 0.1 USD/h
+
+# Identity level of the counterparty. Can be "anonymous", "registered", "identified" and "professional".
+identity: anonymous
+tag: sonm-hackathon-oct2021
+
+resources:
+  network:
+    # Indicates whether overlay networking is required.
+    overlay: true
+    # Indicates whether outbound connections are required (internet access).
+    outbound: true
+    # Indicates whether inbound connections are required and public IP should be present on worker.
+    incoming: true
+  benchmarks:
+    # Required RAM size in bytes.
+    ram-size: 1000000000
+    # Required storage size in bytes.
+    storage-size: 4000000000
+    # Required CPU cores. This only specifies mininum number of CPU threads, not their scheduling.
+    # To specify amount of computing power use cpu-sysbench-* parameters
+    cpu-cores: 1
+    # Minimum computing power of single CPU thread, calculated via sysbench
+    # (some abstract value, currently  it is how many times CPU can calculate first 50000 prime numbers in 10 seconds).
+    cpu-sysbench-single: 100
+    # Download throughput in bits/s.
+    net-download: 12000
+    # Upload throughput in bits/s.
+    net-upload: 5000

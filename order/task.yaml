@@ -1,0 +1,6 @@
+container:
+  # Image name to start on worker.
+  image: sonm/sum:latest
+  # Env variables that will be passed to container on start.
+  env:
+    SERVICE_ADDR: http://92.246.170.62:1526
